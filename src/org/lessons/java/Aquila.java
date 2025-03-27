@@ -1,6 +1,8 @@
 package org.lessons.java;
 
-public class Aquila extends AbstractAnimal {
+import org.lessons.java.interfaces.IVolante;
+
+public class Aquila extends AbstractAnimal implements IVolante{
 
     @Override
     public String mangia() {
@@ -10,5 +12,10 @@ public class Aquila extends AbstractAnimal {
     @Override
     public String verso() {
         return "Skree!";
+    }
+
+    @Override
+    public String vola(){
+        return "L'aquila sta volando!";
     }
 }
